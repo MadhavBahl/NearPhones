@@ -1,0 +1,26 @@
+{
+  "name": "mainproject",
+  "version": "1.0.0",
+  "description": "Smart Tangle Free Earphones",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadhavBahlMD/NearPhones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadhavBahlMD/NearPhones/issues"
+  },
+  "homepage": "https://github.com/MadhavBahlMD/NearPhones#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "serialport": "^4.0.7",
+    "socket.io": "^2.2.0"
+  }
+}

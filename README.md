@@ -28,3 +28,15 @@ This project has been done in 3 phases,
 <img src="./img/p1b.jpg">
 
 <img src="./img/phase1.jpg">
+
+### Phase 2
+
+To Be Added
+
+### Phase 3
+
+To Be Added
+
+### Special Thanks
+
+A huge shoutout to [Ahmed Qwaydat's](https://github.com/AhmedOwaydat) [Mp3-Player](https://github.com/AhmedOwaydat/mp3-player) which helped us making the web app for this project!
