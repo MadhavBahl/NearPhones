@@ -62,31 +62,42 @@ $(function(){
 
     socket.on ('serialData', (data) => {
         console.log ('Serial Data -> ', data);
-        if (data == 'n' && counter === 0) {
-            console.log ('MAGIC');
-            // socket.emit ('playSong from server', "A song was played");
-            // counter++;
-            // $('.fa-play').addClass('hidden').fadeOut(200, function() {
-            //     $('.pause').removeClass('hidden').css("display", "inline-block");    
-            // });
-            // document.getElementById('myPlayer').play();
-
-            
-        } else if (data == 'y' && counter === 0) {
-            console.log ('PAUSEEEE YO');
-            counter++;
+        if (data == 'y') {
             $('.pause').addClass('hidden').fadeOut(200, function() {
                 $('.fa-play').removeClass('hidden').css("display", "inline-block");    
             });
             document.getElementById('myPlayer').pause();
-        } else if (data === 'y' && counter === 1) {
-            console.log ('PLAY YO!');
-            counter--;
+        } else if (data == 'n') {
             $('.fa-play').addClass('hidden').fadeOut(200, function() {
                 $('.pause').removeClass('hidden').css("display", "inline-block");    
             });
             document.getElementById('myPlayer').play();
         }
+        // if (data == 'n' && counter === 0) {
+        //     console.log ('MAGIC');
+        //     // socket.emit ('playSong from server', "A song was played");
+        //     // counter++;
+        //     // $('.fa-play').addClass('hidden').fadeOut(200, function() {
+        //     //     $('.pause').removeClass('hidden').css("display", "inline-block");    
+        //     // });
+        //     // document.getElementById('myPlayer').play();
+
+            
+        // } else if (data == 'y' && counter === 0) {
+        //     console.log ('PAUSEEEE YO');
+        //     counter++;
+        //     $('.pause').addClass('hidden').fadeOut(200, function() {
+        //         $('.fa-play').removeClass('hidden').css("display", "inline-block");    
+        //     });
+        //     document.getElementById('myPlayer').pause();
+        // } else if (data === 'y' && counter === 1) {
+        //     console.log ('PLAY YO!');
+        //     counter--;
+        //     $('.fa-play').addClass('hidden').fadeOut(200, function() {
+        //         $('.pause').removeClass('hidden').css("display", "inline-block");    
+        //     });
+        //     document.getElementById('myPlayer').play();
+        // }
     });
 
     $('.fa-play').click(function() {
