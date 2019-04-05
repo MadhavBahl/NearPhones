@@ -19,7 +19,7 @@ app.get ('/', (req, res) => {
 var serialport = require('serialport');
 var SerialPort = serialport.SerialPort;
 // Open the port
-var port = new SerialPort("COM11", {
+var port = new SerialPort("COM4", {
     baudRate: 9600,
     parser: serialport.parsers.readline("\n")
 });
@@ -65,5 +65,5 @@ port.on("open", function () {
 
 
 http.listen (interPort, () => {
-    console.log (`Server is up at port ${port}`);
+    console.log (`Server is up at port ${interPort}`);
 });
